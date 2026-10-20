@@ -21,6 +21,10 @@ html {
 
 body {
     margin: 0;
+
+    /* Makes room for the fixed navigation */
+    padding-top: 52px;
+
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: #1F3A5F;
@@ -41,8 +45,6 @@ h1 {
 h2 {
     font-size: 28px;
     font-weight: 700;
-
-    /* Removes extra space above section headings */
     margin-top: 0;
 }
 
@@ -75,6 +77,28 @@ h3 {
 }
 
 
+/* Navigation
+------------------------------------*/
+
+/* Keeps the navigation at the top of the browser */
+nav {
+    background-color: #F8F4EA;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
+nav a {
+    color: #1F3A5F;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+
 /* Header & Footer 
 ------------------------------------*/
 header {
@@ -82,12 +106,10 @@ header {
     color: #F8F4EA;
 }
 
-/* Styles only the profile image */
 .profile-img {
     border-radius: 50%;
 }
 
-/* Brings the name and tagline closer together */
 header h1,
 header h2 {
     margin: 0;
@@ -96,8 +118,6 @@ header h2 {
 footer {
     background-color: #4F709C;
     color: #F8F4EA;
-
-    /* Centers all footer content */
     text-align: center;
 }
 
@@ -127,9 +147,25 @@ footer a {
 /* Education
 ------------------------------------*/
 .education {
-    background-color: #EADBC8;
+    /* Adds a transparent blue gradient over the CSUN seal */
+    background-image:
+        linear-gradient(
+            rgba(31, 58, 95, 0.85),
+            rgba(79, 112, 156, 0.80)
+        ),
+        url("../images/CSUN_Seal.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* Keeps the background image fixed while scrolling */
+    background-attachment: fixed;
+
+    color: #F8F4EA;
 }
 
-.education h2 {
-    color: #1F3A5F;
+.education h2,
+.education h3 {
+    color: #F8F4EA;
 }

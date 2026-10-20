@@ -10,12 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
+    <!-- Fixed navigation menu -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="Anthony_Galstyan_Resume.pdf" download>Download Resume</a>
+    </nav>
+
     <!-- // Intro -->
-    <header>
+    <header id="about">
         <div class="content-wrap">
 
             <img
@@ -34,13 +50,11 @@
     
     <main> 
         <!-- // Work Experience -->
-        <section class="work">
+        <section class="work" id="work">
 
             <div class="content-wrap">
 
                 <h2>Work Experience</h2>
-
-                <!-- Job Details: copy this whole block to add more jobs -->
 
                 <!-- Job information in the narrow column -->
                 <div class="column-narrow">
@@ -51,50 +65,64 @@
 
                 <!-- Job description in the wide column -->
                 <div class="column-wide">
-                    <p>Assisted with various IT tasks and supported the IT team in their daily operations.</p>
-                    <p>Configured and tested starlinks for jobsite deployments.</p>
-                    <p>Handled various account setups for onboardings and offboardings</p>
+                    <p>
+                        Assisted with various IT tasks and supported the IT team
+                        in their daily operations.
+                    </p>
+                    <p>
+                        Configured and tested starlinks for jobsite deployments.
+                    </p>
+                    <p>
+                        Handled various account setups for onboardings and
+                        offboardings.
+                    </p>
                 </div>
-
-                <!-- end of Job Details block. -->
 
             </div>
         </section>
 
 
         <!-- // Education -->
-        <section class="education">
+        <section class="education" id="education">
 
             <div class="content-wrap">
 
                 <h2>Education</h2>
 
-                <!-- School details: copy this whole block to add more schools. -->
                 <h3>California State University, Northridge</h3>
                 <p>Bachelor of Science in Computer Science</p>
-                
-                <!-- Add as many paragraphs as you need. -->
-                <!-- End of school details. -->
 
             </div>
         </section>
     </main>
     
     <!-- // Footer & contact info -->
-    <footer>
+    <footer id="contact">
 
         <div class="content-wrap">
 
             <h2>Let's Keep in Touch!</h2>
             
             <div class="contact-info">
-                <a href="mailto:atgalstyan1@gmail.com">Email</a>
-                <a href="https://www.instagram.com/ant_t0ne/">Instagram</a>
+
+                <!-- Font Awesome email icon -->
+                <a href="mailto:atgalstyan1@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                </a>
+
+                <!-- Font Awesome Instagram icon -->
+                <a href="https://www.instagram.com/ant_t0ne/">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+
             </div>
 
             <p>Copyright 2026 by Anthony Galstyan</p>
 
         </div>
     </footer>
+
 </body>
 </html>
